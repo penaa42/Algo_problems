@@ -19,14 +19,16 @@ a = [1,2,3]
 b = [3,2,1]
 
 def list_position(list1, list2):
-    counter1 = 0
-    counter2 = 0
+    # method is used with lists of the same length
+    counter1 = 0 # list1 counter
+    counter2 = 0 # list2 counter
+    # index 0 is for counter1 (list1); index 1 is for counter2 (list2)
+    # final score will show the winner
     final_score = []
-    print(list1)
-    print(list2)
-    for i in list1:
-        if i > list2[i]:
-            print(f'second print {i}')
+    if len(list1) != len(list2):
+        return False
+    for i in range(len(list1)):
+        if list1[i] > list2[i]:
             counter1 += 1
         elif list1[i] < list2[i]:
             counter2 += 1
@@ -34,13 +36,5 @@ def list_position(list1, list2):
             print('Tied score, no point awarded')
     final_score.append(counter1)
     final_score.append(counter2)
-    print(final_score)
     return final_score
 print(list_position(a,b))
-# if a[i] < b[i]:
-# counter1
-# counter2
-# store into an array
-
-
-# correct indexing problem for loop
