@@ -42,4 +42,5 @@ print(list_position(a,b))
 # counter2
 # store into an array
 
+
 # correct indexing problem for loop
