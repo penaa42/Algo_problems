@@ -47,3 +47,26 @@ def aVeryBigSum(any_list):
     return list_sum
 # print(aVeryBigSum([100000, 100001, 100002, 100003, 100004, 100005]))
 
+#5
+test_list = [1, 1, 0, -1, -1, 34, 2, -4, -1, 0, 0, 2, -1, -3, 4, -1, 0]
+
+def plusMinus(any_list):
+    pos_num = 0
+    neg_num = 0
+    zero_num = 0
+    list_length = len(any_list)
+    for num in any_list:
+        if num > 0:
+            pos_num += 1
+        elif num < 0:
+            neg_num += 1
+        else:
+            zero_num += 1
+    pos_ratio = pos_num / list_length
+    neg_ratio = neg_num / list_length
+    zero_ratio = zero_num / list_length
+    print('Postive number ratio: ' + ('%.6f' % pos_ratio))
+    print('Negative number ratio: ' + ('%.6f' % neg_ratio))
+    print('Zero number ratio: ' + ('%.6f' % zero_ratio))
+    return pos_num, neg_num, zero_num, pos_ratio, neg_ratio, zero_ratio
+# plusMinus(test_list)
