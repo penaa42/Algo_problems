@@ -37,4 +37,13 @@ def list_position(list1, list2):
     final_score.append(counter1)
     final_score.append(counter2)
     return final_score
-print(list_position(a,b))
+# print(list_position(a,b))
+
+#4
+def aVeryBigSum(any_list):
+    list_sum = 0
+    for num in any_list:
+        list_sum = list_sum + num
+    return list_sum
+# print(aVeryBigSum([100000, 100001, 100002, 100003, 100004, 100005]))
+
