@@ -75,10 +75,8 @@ def plusMinus(any_list):
 # staircase
 def staircase(num):
     spaces = num
-    
     for i in range(1, (num + 1)):
-        print(spaces)
-        print((' ' * (spaces - 1)) + '#')
+        print((' ' * (spaces - 1)) + ('#' * i))
         spaces -= 1
 
 print(staircase(5))
