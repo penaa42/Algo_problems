@@ -70,3 +70,15 @@ def plusMinus(any_list):
     print('Zero number ratio: ' + ('%.6f' % zero_ratio))
     return pos_num, neg_num, zero_num, pos_ratio, neg_ratio, zero_ratio
 # plusMinus(test_list)
+
+#6
+# staircase
+def staircase(num):
+    spaces = num
+    
+    for i in range(1, (num + 1)):
+        print(spaces)
+        print((' ' * (spaces - 1)) + '#')
+        spaces -= 1
+
+print(staircase(5))
