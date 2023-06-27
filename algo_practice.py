@@ -105,5 +105,5 @@ def miniMaxSum(any_list):
     print(min_sum, max_sum)
     return min_sum, max_sum
 
-miniMaxSum(test_list1)
-miniMaxSum(test_list2)
+# miniMaxSum(test_list1)
+# miniMaxSum(test_list2)
