@@ -78,5 +78,32 @@ def staircase(num):
     for i in range(1, (num + 1)):
         print((' ' * (spaces - 1)) + ('#' * i))
         spaces -= 1
+# staircase(5)
 
-print(staircase(5))
+#7
+test_list1 = [1,2,3,4,5]
+test_list2 = [11,12,13,14,15]
+
+def miniMaxSum(any_list):
+    if len(any_list) != 5:
+        return False
+    min_sorted_list = sorted(any_list)
+    min_sorted_list.pop(4)
+
+    max_sorted_list = sorted(any_list)
+    max_sorted_list.pop(0)
+
+    min_sum = 0
+    max_sum = 0
+    
+    for i in min_sorted_list:
+        min_sum += i
+
+    for i in max_sorted_list:
+        max_sum += i
+
+    print(min_sum, max_sum)
+    return min_sum, max_sum
+
+miniMaxSum(test_list1)
+miniMaxSum(test_list2)
