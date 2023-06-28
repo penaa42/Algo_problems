@@ -107,3 +107,31 @@ def miniMaxSum(any_list):
 
 # miniMaxSum(test_list1)
 # miniMaxSum(test_list2)
+
+#8
+candles = [4,4,1,3]
+candles1 = [3,2,1,3,3]
+candles2 = [2,4,3,6,3,5,3,6,7,6,7,7,-1]
+
+def birthdayCakeCandles(any_list):
+    tallest_height = 0
+    count = 0
+
+    for i in any_list:
+        if i <= 0:
+            return False
+
+    for i in any_list:
+        if i > tallest_height:
+            tallest_height = i
+
+    for i in any_list:
+        if i == tallest_height:
+            count += 1
+
+    print(count)
+    return count
+
+birthdayCakeCandles(candles)
+birthdayCakeCandles(candles1)
+birthdayCakeCandles(candles2)
