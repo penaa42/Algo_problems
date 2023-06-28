@@ -125,7 +125,6 @@ def birthdayCakeCandles(any_list):
         if i > tallest_height:
             tallest_height = i
 
-    for i in any_list:
         if i == tallest_height:
             count += 1
 
