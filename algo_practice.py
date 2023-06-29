@@ -131,6 +131,34 @@ def birthdayCakeCandles(any_list):
     print(count)
     return count
 
-birthdayCakeCandles(candles)
-birthdayCakeCandles(candles1)
-birthdayCakeCandles(candles2)
+# birthdayCakeCandles(candles)
+# birthdayCakeCandles(candles1)
+# birthdayCakeCandles(candles2)
+
+#9
+s = '12:01:00PM'
+s1 = '12:01:00AM'
+
+def timeConversion(standard_time):
+    str_length = len(standard_time)
+    print(str_length)
+    for i in range(2):
+        print(i)
+
+
+test_time = 1
+def test(math_test):
+    out_time = test_time + 12
+
+    if test_time <= 12:
+        print(f'time is under 12: {test_time}')
+
+    if test_time + 12 < 24:
+        print(f'time is under 24: {out_time}')
+    elif test_time + 12 > 24:
+        print(f'time is over 24: {out_time}')
+
+test(test_time)
+
+
+# timeConversion(s)
