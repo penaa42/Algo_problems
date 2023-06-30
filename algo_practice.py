@@ -136,6 +136,7 @@ def birthdayCakeCandles(any_list):
 # birthdayCakeCandles(candles2)
 
 #9
+# military time 000-0100; 13-23:59
 s = '12:01:00PM'
 s1 = '12:01:00AM'
 
@@ -146,19 +147,28 @@ def timeConversion(standard_time):
         print(i)
 
 
-test_time = 1
+test_time = '11:00:00AM'
 def test(math_test):
-    out_time = test_time + 12
+    # out_time = test_time + 12
+    AM_check = 'AM'
+    PM_check = 'PM'
 
-    if test_time <= 12:
-        print(f'time is under 12: {test_time}')
+    if AM_check in test_time:
+        print(f'this is morning: {test_time}')
+        convert_am = test_time
+        print(len(convert_am))
+        new_convert_am = convert_am.replace('AM', '')
+        print(new_convert_am)
 
-    if test_time + 12 < 24:
-        print(f'time is under 24: {out_time}')
-    elif test_time + 12 > 24:
-        print(f'time is over 24: {out_time}')
+    elif PM_check in test_time:
+        print(f'this is afternoon: {test_time}')
+        convert_pm = test_time
+
+    else:
+        print('not working')
+
+    #     print(f'military time: ')
 
 test(test_time)
-
 
 # timeConversion(s)
