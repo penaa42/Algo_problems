@@ -149,7 +149,6 @@ def timeConversion(standard_time):
 
 test_time = '11:00:00AM'
 def test(math_test):
-    # out_time = test_time + 12
     AM_check = 'AM'
     PM_check = 'PM'
 
