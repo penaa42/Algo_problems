@@ -140,11 +140,11 @@ def birthdayCakeCandles(any_list):
 s = '12:01:00PM'
 s1 = '12:01:00AM'
 
-def timeConversion(standard_time):
-    str_length = len(standard_time)
-    print(str_length)
-    for i in range(2):
-        print(i)
+# def timeConversion(standard_time):
+#     str_length = len(standard_time)
+#     print(str_length)
+#     for i in range(2):
+#         print(i)
 
 
 test_time = '11:00:00AM'
@@ -158,6 +158,9 @@ def test(math_test):
         print(len(convert_am))
         new_convert_am = convert_am.replace('AM', '')
         print(new_convert_am)
+        
+
+
 
     elif PM_check in test_time:
         print(f'this is afternoon: {test_time}')
