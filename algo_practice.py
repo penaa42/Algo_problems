@@ -156,16 +156,7 @@ def test(math_test):
 
 # create portion of the function to splice string?
 
-
-    # elif PM_check in test_time:
-    #     print(f'this is afternoon: {test_time}')
-    #     convert_pm = test_time
-
-    # else:
-    #     print('not working')
-
-    #     print(f'military time: ')
-
-test(test_time)
-
+# test(test_time)
 # timeConversion(s)
+
+#10
