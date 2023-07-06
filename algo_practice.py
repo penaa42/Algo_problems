@@ -142,21 +142,41 @@ s1 = '12:01:00AM'
 
 # def timeConversion(standard_time):
 
-test_time = '11:00:00AM'
+test_time = '12:00:00PM'
+military_time = ''
+
 def test(math_test):
     AM_check = 'AM'
     PM_check = 'PM'
+    add_hours = 12
+    time_limit = 24
 
     if AM_check in test_time:
-        print(f'this is morning: {test_time}')
         convert_am = test_time
-        print(len(convert_am))
         new_convert_am = convert_am.replace('AM', '')
-        print(new_convert_am)
+        am_hour_adjust = new_convert_am[:2]
+        print(am_hour_adjust)
 
-# create portion of the function to splice string?
 
-# test(test_time)
+    if PM_check in test_time:
+        convert_pm = test_time
+        new_convert_pm = convert_pm.replace('PM', '')
+        
+        pm_hour_adjust = new_convert_pm[:2]
+        # print(pm_hour_adjust)
+        
+        pm_hour_adjust = int(pm_hour_adjust)
+        
+        final_time = pm_hour_adjust + add_hours
+
+        if final_time >= time_limit:
+            final_time = (final_time - time_limit)
+            print(final_time)
+            print(type(final_time))
+            # military_time =
+
+
+test(test_time)
 # timeConversion(s)
 
 #10
