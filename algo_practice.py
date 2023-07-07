@@ -163,7 +163,6 @@ def test(math_test):
         new_convert_pm = convert_pm.replace('PM', '')
         
         pm_hour_adjust = new_convert_pm[:2]
-        # print(pm_hour_adjust)
         
         pm_hour_adjust = int(pm_hour_adjust)
         
