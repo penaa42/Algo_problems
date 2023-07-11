@@ -142,7 +142,7 @@ s1 = '12:01:00AM'
 
 # def timeConversion(standard_time):
 
-test_time = '12:00:00PM'
+test_time = '02:00:00AM'
 military_time = ''
 
 def test(math_test):
@@ -152,30 +152,23 @@ def test(math_test):
     time_limit = 24
 
     if AM_check in test_time:
-        convert_am = test_time
-        new_convert_am = convert_am.replace('AM', '')
-        am_hour_adjust = new_convert_am[:2]
-        print(am_hour_adjust)
+        converted_time = test_time
+        military_time = converted_time.replace('AM', '')
+        print(military_time)
+        # adjust standard am to military: 01:00:00 am to 00:01:00
 
 
     if PM_check in test_time:
         convert_pm = test_time
         new_convert_pm = convert_pm.replace('PM', '')
         
-        pm_hour_adjust = new_convert_pm[:2]
-        
-        pm_hour_adjust = int(pm_hour_adjust)
-        
+        pm_hour_adjust = new_convert_pm[:2]        
+        pm_hour_adjust = int(pm_hour_adjust)        
         final_time = pm_hour_adjust + add_hours
 
         if final_time >= time_limit:
             final_time = (final_time - time_limit)
-            print(final_time)
-            print(type(final_time))
-            # military_time =
 
 
 test(test_time)
 # timeConversion(s)
-
-#10
